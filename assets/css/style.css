@@ -1,0 +1,424 @@
+
+File Name: style.css
+Date: 05/17/2016
+Programmer: Betsy Gascon
+*/
+/*********** MOBILE STYLESHEET ***********/
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.7em;
+  color: white;
+  background-image: url(../images/tablet-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+header img {
+  max-width: 100%;
+}
+header p {
+  font-style: italic;
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 1em;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.3em;
+}
+h3 {
+  font-size: 1.2em;
+}
+h4 {
+  font-size: 1.2em;
+}
+p {
+  padding-bottom: 1em;
+}
+img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+nav {
+  background-color: gainsboro;
+}
+nav ul {
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+nav ul li {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+}
+nav ul ul {
+  display: none;
+}
+nav a {
+  display: block;
+  padding: 1em 0 1em 0;
+  text-decoration: none;
+  font-weight: bold;
+  min-width: 170px;
+  color: black;
+  border-bottom: 1px solid floralwhite;
+}
+nav a:hover {
+  background-color: #767676;
+}
+main {
+  padding: .5em;
+}
+main p {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+main ul {
+  padding-bottom: 1em;
+}
+main ul li {
+  list-style-type: disc;
+  margin-left: 4em;
+}
+section {
+  background-color: rgba(86, 86, 86, 0.8);
+  padding-left: .5em;
+  padding-right: .5em;
+}
+div {
+  display: block;
+  align-content: center;
+}
+section div,
+footer div {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+footer {
+  font-size: .8em;
+  font-weight: bold;
+  color: black;
+  background-color: gainsboro;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+footer div {
+  border-bottom: 1px solid floralwhite;
+  display: block;
+  padding-left: 3em;
+}
+footer div:last-of-type {
+  display: none;
+}
+#movie {
+  text-align: center;
+}
+iframe {
+  border: 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.headline {
+  display: none;
+}
+#copyright {
+  padding: .5em;
+  display: block;
+  font-size: .6em;
+  font-style: italic;
+  text-align: center;
+}
+p#response {
+  font-weight: bold;
+  color: deepskyblue;
+  padding: 1em;
+  margin: 0 1em 1em 1em;
+  border: solid 1px deepskyblue;
+  text-align: center;
+}
+/* style for photo slider */
+#slider {
+  padding: 0;
+  margin: 0 auto;
+}
+#slider ul li {
+  list-style-type: none;
+  margin-left: 0;
+}
+#slider img {
+  max-width: none;
+  padding: 0;
+}
+.jsOff ul.bjqs {
+  display: block;
+}
+.jsOff ul.bjqs li {
+  margin-bottom: 1em;
+}
+ul.bjqs li {
+  position: relative;
+}
+ul.bjqs li .headline {
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  padding: 1em 2em 1em 3em;
+  position: absolute;
+  top: 2em;
+  z-index: 9999;
+}
+.headline h2 {
+  color: white;
+  font-size: 2em;
+  line-height: 1.125;
+}
+.headline p {
+  line-height: 1.5;
+}
+.bjqs img {
+  height: auto;
+  max-width: 100%;
+}
+.bjqs-prev a,
+.bjqs-next a {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+}
+ol.bjqs-markers {
+  margin: 1em 0;
+}
+ol.bjqs-markers li {
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 1;
+  margin: 0 2px;
+  padding: 1px;
+}
+ol.bjqs-markers li a {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: block;
+  height: 0.6em;
+  overflow: hidden;
+  text-indent: -9999em;
+  width: 0.6em;
+}
+ol.bjqs-markers li.active-marker a {
+  background: #a0d468;
+}
+/* style for faq page */
+dt {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.125;
+  margin: 0 0 1.125em 0;
+}
+.jsOn dt {
+  cursor: pointer;
+}
+.jsOn dt:before {
+  border: 0.5em solid;
+  border-color: transparent transparent transparent #f2eeef;
+  content: '';
+  display: inline-block;
+  height: 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  width: 0;
+}
+.jsOn dt.open:before {
+  border-color: #f2eeef transparent transparent transparent;
+  border-bottom-width: 0;
+}
+.jsOn dt:hover {
+  color: deepskyblue;
+}
+.jsOn dt:hover:before {
+  border-left-color: deepskyblue;
+}
+.jsOn dt.open:hover:before {
+  border-left-color: transparent;
+  border-top-color: deepskyblue;
+}
+dd {
+  margin-left: 3.375em;
+}
+.content dd p {
+  margin-top: 0;
+}
+.jsOn dd {
+  display: none;
+}
+/* Form styles */
+form#contact {
+  padding: 2em 0 3em 0;
+}
+form#contact input {
+  line-height: 2em;
+  width: 100%;
+}
+form#contact input[type="submit"] {
+  width: 50%;
+}
+form#contact textarea {
+  width: 100%;
+}
+
+
+/*********** TABLET STYLESHEET ***********/
+
+
+@media only screen and (min-width: 481px) {
+  body {
+    font-size: 16px;
+    background-image: url(../images/tablet-bg.jpg);
+    background-size: cover;
+  }
+  main,
+  header {
+    padding: 1em;
+    margin: 1em;
+  }
+  main img {
+    max-width: 60%;
+  }
+  header {
+    margin: 2em;
+  }
+  header img {
+    max-width: 40%;
+  }
+  nav a {
+    border-bottom: none;
+    min-width: 140px;
+  }
+  nav ul {
+    margin-left: 2em;
+  }
+  nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  section div,
+  footer div {
+    padding: 1em;
+  }
+  footer div img {
+    display: flex;
+    float: right;
+    max-width: 80%;
+  }
+  #middle,
+  footer {
+    display: flex;
+  }
+  iframe {
+    min-width: 60%;
+    max-width: 90%;
+  }
+  form#contact input {
+    width: 50%;
+  }
+  form#contact input[type="submit"] {
+    width: 20%;
+  }
+  form#contact textarea {
+    width: 50%;
+  }
+}
+
+
+/*********** DESKTOP STYLESHEET ***********/
+
+
+@media only screen and (min-width: 1023px) {
+  body {
+    background-image: url(../images/bg_image2.jpg);
+    background-size: cover;
+  }
+  header,
+  main,
+  footer {
+    padding: 2em;
+  }
+  header {
+    margin: 3em;
+  }
+  h1 {
+    font-size: 2.2em;
+    padding-bottom: 2.5em;
+  }
+  nav a {
+    min-width: 180px;
+  }
+  nav ul {
+    margin-left: 3em;
+  }
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin-left: -90px;
+  }
+  nav ul li:hover > ul {
+    display: inherit;
+  }
+  nav ul ul li {
+    min-width: 180px;
+    display: list-item;
+    position: relative;
+    background-color: gainsboro;
+  }
+  footer {
+    padding-left: 4em;
+  }
+  footer div {
+    min-width: 20%;
+    border: none;
+  }
+  footer div img {
+    max-width: 65%;
+  }
+  iframe {
+    width: 640px;
+    height: 360px;
+  }
+  form#contact {
+    padding-left: 5em;
+  }
+  .headline {
+    display: inherit;
+  }
+}

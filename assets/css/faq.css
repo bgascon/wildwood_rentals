@@ -1,0 +1,51 @@
+dt {
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.125;
+	margin: 0 0 1.125em 0;
+}
+
+.jsOn dt {
+	cursor: pointer;
+}
+
+.jsOn dt:before {
+	border: 0.5em solid;
+	border-color: transparent transparent transparent #f2eeef;
+	content: '';
+	display: inline-block;
+	height: 0;
+	margin-right: 0.5em;
+	vertical-align: middle;
+	width: 0;
+}
+
+.jsOn dt.open:before {
+	border-color: #f2eeef transparent transparent transparent;
+	border-bottom-width: 0;
+}
+
+.jsOn dt:hover {
+	color: deepskyblue;
+}
+
+.jsOn dt:hover:before {
+	border-left-color: deepskyblue;
+}
+
+.jsOn dt.open:hover:before {
+	border-left-color: transparent;
+	border-top-color: deepskyblue;
+}
+
+dd {
+	margin-left: 3.375em;
+}
+
+.content dd p {
+	margin-top: 0;
+}
+
+.jsOn dd {
+	display: none;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<!--
+File Name: ok.html
+Date: 05/20/16
+Programmer: Betsy Gascon
+-->
+
+<html lang="en">
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Betsy Gascon">
+        <title> Wildwood Exploration Rentals</title>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        
+        <header>
+            <img src="assets/images/logo.png" alt="Wildwood Exploration Rental Logo" title="Wildwood Exploration Rental Logo">
+        </header>
+        
+        <nav>
+            <ul>
+            <!-- navigation bar -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a>
+            <!-- First tier navigation -->
+                    <ul>
+                        <li><a href="#">Climbing</a></li>
+                        <li><a href="#">Backpacking</a></li>
+                        <li><a href="#">Camping</a></li>
+                        <li><a href="#">Mountaineering</a></li>
+                    </ul>
+                </li>
+                <li><a href="where.html">Where To Go</a></li>
+                <li><a href="bp101.html">Backpacking 101</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section id="intro">
+                
+                <p id="response">Thank you for your email! We will respond to you shortly.</p>
+            
+                <h1>Contact Us!</h1>
+                
+                <p>If you have any questions, comments, suggestions, or anything you'd like to get off your chest, feel free to use this handy form to send us an email. We would love to hear from you. Typically we respond to your emails within one business day.</p>
+                
+                <form id="contact" name="contact" action="contact_process.php" method="post">
+                    <p>Your Name:</p>
+                    <p><input type="text" id="name" name="name" required></p>
+                    
+                    <p>Your Email:</p>
+                    <p><input type="email" id="email" name="email" required></p>
+                    
+                    <p>Comments:</p>
+                    <p><textarea id="comments" name="comments" rows="5"></textarea></p>
+                    
+                    <p><input type="submit" value="Click to Send"></p>
+                </form>
+                
+            </section>
+            
+            
+        </main>
+        
+        <footer>
+            <div>
+                <h4><a href="rentals.html">Rentals</a></h4>
+                    <ul>
+                        <li><a href="#">Climbing</a></li>
+                        <li><a href="#">Backpacking</a></li>
+                        <li><a href="#">Camping</a></li>
+                        <li><a href="#">Mountaineering</a></li>
+                    </ul>
+            </div>
+            <div>
+                <h4><a href="bp101.html">Backpacking 101</a></h4>
+                    <ul>
+                        <li><a href="bp101.html#packing">Packing Essentials</a></li>
+                        <li><a href="bp101.html#food">What to Eat</a></li>
+                    </ul>
+            </div>
+            <div>
+                <h4><a href="where.html">Where To Go</a></h4>
+                    <ul>
+                        <li><a href="where.html#gorge">Columbia Gorge</a></li>
+                        <li><a href="where.html#coast">Oregon Coast</a></li>
+                        <li><a href="where.html#hood">Mt. Hood</a></li>
+                    </ul>
+            </div>
+            <div>
+                <h4>Our Location</h4>
+                <ul>
+                    <li>xxx-xxx-xxx</li>
+                    <li>XXX NE Prescott St.<br>
+                            Portland, OR 97214
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="index.html"><img src="assets/images/logo.png" alt="Wildwood Exploration Rental Logo" title="Wildwood Exploration Rental Logo"></a>
+            </div>
+            
+        </footer>
+            <p id="copyright">Copyright &copy; Betsy Gascon 2016</p>
+        
+    </body>
+
+</html>
