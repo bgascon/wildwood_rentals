@@ -72,6 +72,12 @@ This logo was created and drawn by me in Adobe Illustrator for the purposes of t
   }
 ```
 ### `jQuery`
+
+For the Javascript or jQuery requirement, I chose to integrate jQuery for the FAQ site to show/hide the answers associated with the questions.
+\
+\
+![faq](https://github.com/bgascon/wildwood_rentals/blob/master/assets/images/faq.png)
+
 ### `PHP` Contact Form
 
 ## Project Issues
