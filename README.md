@@ -80,6 +80,57 @@ For the Javascript or jQuery requirement, I chose to integrate jQuery for the FA
 
 ### `PHP` Contact Form
 
+![contact form](https://github.com/bgascon/wildwood_rentals/blob/master/assets/images/contact.png)
+\
+For this requirement, I build a straighforward html contact form and then utilized php to process the form. When you submit a form it loads a new page that is either a 'success' or 'fail' - depending on whether or not the form responses were able to be processed.
+
+```
+<?php
+
+$EmailFrom = Trim(stripslashes($_POST['email'])); 
+$EmailTo = "formcatcher@gmail.com";
+$Subject = "Wildwood Exploration Rentals";
+$Name = Trim(stripslashes($_POST['name'])); 
+$Comments = Trim(stripslashes($_POST['comments'])); 
+$current_date = date("Y-m-d"); // This date is created when the form is submitted.
+
+
+$validationOK=true;
+if (Trim($EmailFrom)=="") $validationOK=false;
+if (Trim($Name)=="") $validationOK=false;
+if (!$validationOK) {
+print "<meta http-equiv=\"refresh\" content=\"0;URL=error.html\">";
+exit;
+}
+
+$myFilePath = "contacts/";
+$myFileName = "form-data.csv";
+$myPointer = fopen ($myFilePath.$myFileName, "a+");
+$form_data = $current_date . "," . $EmailFrom . "," . $Name . "," . $Comments . "\n";
+fputs ($myPointer, $form_data);
+fclose ($myPointer);
+
+
+$Body = "";
+$Body .= "Name: ";
+$Body .= $Name;
+$Body .= "\n";
+$Body .= $Comments;
+$Body .= "\n";
+
+
+$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+
+
+if ($success){
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=ok.html\">";
+}
+else{
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.html\">";
+}
+?>
+```
+
 ## Project Issues
 
 1. The main issue I have is that our nav menu was focused mostly on a desktop-view and because of that, it doesn't function properly in mobile or tablet views because it relies on a `:hover` event. I would like to add a dimension so that the menu will expand second-tier menu items with a click event as well.
