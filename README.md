@@ -61,4 +61,4 @@ This logo was created and drawn by me in Adobe Illustrator for the purposes of t
 
 ## Project Issues
 
-1. The main issue I have is that our project was focused mostly on a desktop-view and because of that the navigation menu was optimized for that scenerio. It doesn't function properly in mobile or tablet views because it relies on a `:hover` event. I would like to add a dimension so that the menu will expand to the second-tier menu items with a click event as well.
+1. The main issue I have is that our nav menu was focused mostly on a desktop-view and because of that, it doesn't function properly in mobile or tablet views because it relies on a `:hover` event. I would like to add a dimension so that the menu will expand second-tier menu items with a click event as well.
