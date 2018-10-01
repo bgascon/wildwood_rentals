@@ -11,3 +11,5 @@ A school project based upon the fictional business Wildwood Exploration Rentals
 3. A multi-level nav menu made purely with `CSS`
 4. At least 2 elements using `Javascript` or `JQuery`
 5. A working contact form with `PHP` processing
+
+## Project Elements
