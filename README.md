@@ -1,4 +1,4 @@
 
-# WildWood Exploration Rentals
+# Wildwood Exploration Rentals
 
-Exploration of layouts and features of a fictional rental company
+A school project based upon the fictional business Wildwood Exploration Rentals
