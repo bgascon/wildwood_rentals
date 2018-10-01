@@ -12,6 +12,8 @@ A school project based upon the fictional business Wildwood Exploration Rentals
 4. At least 2 elements using `Javascript` or `jQuery`
 5. A working contact form with `PHP` processing
 
+This project is complete as required for my class, but there some missing links/pages, and some incomplete elements.
+
 ## Project Design
 
 I approached this project with a mobile-first mindset - starting my design process with a mobile layout before moving to tablet and then desktop layouts.
