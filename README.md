@@ -44,6 +44,17 @@ This logo was created and drawn by me in Adobe Illustrator for the purposes of t
 		<li><a href="faq.html">FAQ</a></li>
 	</ul>
 </nav>
-```        
+``` 
+```
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin-left: -90px;
+  }
+  nav ul li:hover > ul {
+    display: inherit;
+  }
+```
 ### `jQuery`
 ### `PHP` Contact Form
