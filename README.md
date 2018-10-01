@@ -14,11 +14,17 @@ A school project based upon the fictional business Wildwood Exploration Rentals
 
 ## Project Design
 
+I approached this project with a mobile-first mindset - starting my design process with a mobile layout before moving to tablet and then desktop layouts.
+
 ## Project Elements
 
-### `HTML` and `CSS`
 ### PNG Logo
+![Logo](https://github.com/bgascon/wildwood_rentals/blob/master/assets/images/logo.png)
+
+This logo was created and drawn by me in Adobe Illustrator for the purposes of this website.
+
 ### `CSS` Navigation Menu
+
 ```
 <nav>
 	<ul>
