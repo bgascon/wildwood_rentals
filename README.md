@@ -4,7 +4,7 @@
 
 A school project based upon the fictional business Wildwood Exploration Rentals
 
-## Project Requirements
+## Project Requirements and Overview
 
 1. A design built around the fictional needs of the chosen business or topic
 2. Built from scratch with `HTML` and `CSS`
@@ -58,3 +58,7 @@ This logo was created and drawn by me in Adobe Illustrator for the purposes of t
 ```
 ### `jQuery`
 ### `PHP` Contact Form
+
+## Project Issues
+
+1. The main issue I have is that our project was focused mostly on a desktop-view and because of that the navigation menu was optimized for that scenerio. It doesn't function properly in mobile or tablet views because it relies on a `:hover` event. I would like to add a dimension so that the menu will expand to the second-tier menu items with a click event as well.
