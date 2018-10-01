@@ -17,6 +17,18 @@ This project is complete as required for my class, but there some missing links/
 ## Project Design
 
 I approached this project with a mobile-first mindset - starting my design process with a mobile layout before moving to tablet and then desktop layouts.
+\
+\
+Mobile View:\
+![mobile-view](https://github.com/bgascon/wildwood_rentals/blob/master/assets/images/mobile.png)
+\
+\
+Tablet View:\
+![tablet-view](https://github.com/bgascon/wildwood_rentals/blob/master/assets/images/tablet.png)
+\
+\
+Desktop View:\
+![desktop-view](https://github.com/bgascon/wildwood_rentals/blob/master/assets/images/desktop.png)
 
 ## Project Elements
 
